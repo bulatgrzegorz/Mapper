@@ -51,6 +51,7 @@
     <Compile Include="IExtractProperties.cs" />
     <Compile Include="IMapper.cs" />
     <Compile Include="Mapper.cs" />
+    <Compile Include="Ninject\NinjectKernel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property.cs" />

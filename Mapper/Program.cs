@@ -11,7 +11,7 @@ namespace Mapper
     {
         private static void Main(string[] args)
         {
-            IKernel kernel = new StandardKernel(new Dependencies.UtilitiesModule(), new Dependencies.MainModule());
+            IKernel kernel = new Ninject.NinjectKernel(Ninject.NinjectKernel.GetAllModules().ToArray());
 
             var dea = kernel.Get<IExtractProperties>();
 
