@@ -1,5 +1,4 @@
-﻿using System;
-using Ninject.Modules;
+﻿using Ninject.Modules;
 using Mapper.Utilities;
 
 namespace Mapper.Dependencies

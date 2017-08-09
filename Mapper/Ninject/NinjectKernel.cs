@@ -1,7 +1,6 @@
 ﻿using Ninject;
 using Ninject.Modules;
 using System.Collections.Generic;
-using System;
 using Mapper.Dependencies;
 
 namespace Mapper.Ninject

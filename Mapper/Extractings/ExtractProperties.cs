@@ -1,12 +1,9 @@
-﻿using Mapper.Utilities;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using Mapper.Utilities;
 
-namespace Mapper
+namespace Mapper.Extractings
 {
     public class ExtractProperties : IExtractProperties
     {
@@ -40,11 +37,9 @@ namespace Mapper
                 {
                     foreach (PropertyOfEntity innerProperty in ExtractPropertiesBaseOnType(propertyOfEntity.PropertyType, propertyOfEntity.PropertyValue))
                     {
-                        innerProperty.PropertyParent = propertyOfEntity;
                         yield return innerProperty;
                     }
                 }
-
                 yield return propertyOfEntity;
             }
         }

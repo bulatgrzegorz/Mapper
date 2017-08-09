@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Mapper
+﻿namespace Mapper.Extractings
 {
     public interface IExtractProperties
     {

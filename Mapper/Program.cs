@@ -1,9 +1,6 @@
 ﻿using Ninject;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Mapper.Extractings;
 
 namespace Mapper
 {
@@ -14,10 +11,6 @@ namespace Mapper
             IKernel kernel = new Ninject.NinjectKernel(Ninject.NinjectKernel.GetAllModules().ToArray());
 
             var dea = kernel.Get<IExtractProperties>();
-
-            var sample = new SampleEntity();
-
-            var list = dea.ExtractPropertiesForType<SampleEntity>();
         }
     }
 }

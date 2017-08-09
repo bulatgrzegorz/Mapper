@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Mapper.Extractings;
 using Ninject.Modules;
 
 namespace Mapper.Dependencies

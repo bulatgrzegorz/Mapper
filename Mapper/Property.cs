@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace Mapper
 {
@@ -7,12 +6,6 @@ namespace Mapper
     {
         public IEnumerable<PropertyOfEntity> Properties { get; set; }
 
-        public IEnumerable<PropertyOfEntity> FlatProperties
-        {
-            get
-            {
-                return Properties;
-            }
-        }
+        public IEnumerable<PropertyOfEntity> FlatProperties => Properties;
     }
 }
